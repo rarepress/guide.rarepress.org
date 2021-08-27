@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <title>Rarepress</title>
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Rarepress Guide" />
+  <meta name="twitter:description" content="Learn how to use Rarepress" />
+  <meta name="twitter:image" content="https://guide.rarepress.org/rarepressposter.png" />
+  <meta property="og:url" content="https://guide.rarepress.org" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Rarepress Guide" />
+  <meta property="og:description" content="Learn how to use Rarepress" />
+  <meta property="og:image" content="https://guide.rarepress.org/rarepressposter.png" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Rarepress Guide">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/lib/themes/vue.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,400;1,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+  <style>
+  body {
+    font-size: 14px;
+  }
+  header {
+    background: rgba(0,0,0,0.8);
+    display: flex;
+  }
+  header a {
+    display: block;
+    color: #f5f5f7 !important;
+    padding: 10px;
+    margin: 0;
+  }
+  a {
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    -ms-word-break: break-all;
+    word-break: break-word;
+  }
+  .content {
+    padding-top: 0;
+  }
+  .markdown-section blockquote strong {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  .markdown-section blockquote {
+    border: none;
+    padding: 10px 30px;
+    /*
+    background: rgba(0,0,0,0.03);
+    */
+    border: 10px solid royalblue;
+    color: rgba(0,0,0,0.6);
+  }
+  .sidebar, body {
+    font-family: 'Noto Sans', sans-serif;
+  }
+  aside {
+    background-color: royalblue !important;
+  }
+  .sidebar ul li.active>a {
+    color: rgba(0,0,0,0.4);
+  }
+  .sidebar ul li a {
+    color: rgba(255,255,255,0.7);
+    line-height: 25px;
+  }
+  .markdown-section ol, .markdown-section p, .markdown-section ul {
+    line-height: 1.4rem;
+  }
+  .videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+  }
+  .videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  .highlight {
+    background: yellow;
+    padding: 5px 20px;
+  }
+  .sidebar li {
+    margin: 0;
+  }
+  h1 {
+  /*
+    font-family: 'Lora', serif;
+    font-weight: 700;
+    */
+    font-family: Sans-serif;
+    font-weight: bold;
+    letter-spacing: -2px;
+  }
+  h2 {
+    font-family: Sans-serif;
+    font-weight:600;
+    /*
+    text-transform: uppercase;
+    */
+  }
+  .large {
+    font-family: Sans-serif;
+    margin: 0;
+    font-weight:600;
+    text-transform: uppercase;
+    font-size: 2rem;
+    background: royalblue;
+    color: white;
+    padding: 20px;
+  }
+  h4 {
+    font-family: Sans-serif;
+    font-weight:600;
+  }
+  h3 {
+    font-family: Sans-serif;
+    font-weight:600;
+  }
+  .markdown-section h1 {
+    font-size: 3rem;
+    padding: 10px 0;
+  }
+  section.cover.has-mask .mask {
+    background: rgba(0,0,0,0.9);
+  }
+  section.cover blockquote {
+    font-size: 18px;
+  }
+  .cover-main p a {
+    background: none !important;
+    border: 1px solid white !important;
+    color: white !important;
+    padding: 2px 10px !important;
+    font-size: 12px !important;
+  }
+  section.cover {
+    color: white !important;
+  }
+  h1 .anchor span, h2 .anchor span, h3 .anchor span {
+    color: #305cde !important;
+  }
+  .markdown-section {
+    max-width: 800px;
+    margin: 0;
+  }
+  .markdown-section hr {
+    border-bottom: 1px solid rgba(0,0,0,0.1) !important;
+  }
+  .markdown-section code {
+    color: black;
+    background: rgba(0,0,200,0.08);
+    padding: 1px 3px;
+  }
+  .markdown-section pre code {
+    background: none;
+  }
+  .markdown-section pre {
+    border-left: 5px solid royalblue;
+    background: rgba(0,0,200,0.03);
+    line-height: 1.2rem;
+  }
+  .github-corner svg {
+    fill: royalblue !important;
+  }
+  .markdown-section a {
+    color: royalblue;
+    text-decoration: none;
+  }
+  </style>
+  <link href="./prism.css" rel="stylesheet">
+</head>
+<body>
+  <div id="app"></div>
+  <script>
+    window.$docsify = {
+      themeColor: "black",
+      maxLevel: 2,
+      name: '',
+      repo: 'https://github.com/rarepress/guide.rarepress.org'
+    }
+    document.addEventListener("DOMContentLoaded", () => {
+      setTimeout(() => {
+        let el = document.querySelector("#" + location.hash.split("=")[1])
+        if (el) {
+          const y = el.getBoundingClientRect().top + window.pageYOffset;
+          window.scrollTo({top: y});
+        }
+      }, 1500)
+    })
+
+  </script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
+</body>
+</html>
