@@ -533,13 +533,13 @@ Unlike `rarepress.token.save()` which creates a new token or updates an existing
 
 ### 4. Send
 
-Send your signed tokens to a 3rd party endpoint. By default it is Rarible.com, but you can also specify the URL to send it to another Rarenet (A remote Rarepress endpoint) URL.
+Send your signed trade objects to a 3rd party endpoint. By default it is Rarible.com, but you can also specify the URL to send it to another Rarenet (A remote Rarepress endpoint) URL.
 
 ```javascript
-await rarepress.trade.send(signedToken)
+await rarepress.trade.send(signedTrade)
 ```
 
-Above code sends the `signedToken` to Rarible.com (default endpoint). You can also specify additional URL to send it to another endpoint.
+Above code sends the `signedTrade` to Rarible.com (default endpoint). You can also specify additional URL to send it to another endpoint.
 
 ### 5. Create
 
