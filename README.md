@@ -5,22 +5,9 @@
   <a href="https://discord.gg/BZtp5F6QQM">Discord</a>
 </header>
 
-> Legacy v0 endpoint docs: https://docs.rarepress.org
->
-> Examples and tutorials: https://examples.rarepress.org
->
-> API reference: https://api.rarepress.org
->
-> Rarepress OS documentation: https://os.rarepress.org
->
-> Rarenet documentation: https://rarenet.rarepress.org
-
-
 # Rarepress
 
 ## Your Own NFT Operating System
-
-![introducing](introducing.png)
 
 Rarepress is an open source framework that makes it easy to mint, trade and manage NFTs, as well as build NFT powered apps and engines. It ships with:
 
@@ -30,10 +17,70 @@ Rarepress is an open source framework that makes it easy to mint, trade and mana
 - HTTP RPC Interface + Thin Client
 - Built-in Admin Wallet
 
-Because Rarepress utilizes a [decentralized NFT protocol](https://rarible.org) and includes everything you need to programmatically manage NFTs, you can **build your own independent NFT projects and platforms** without relying on any 3rd party.
-
-
 ![os](ros.png)
+
+## Use Cases
+
+With Rarepress you can:
+
+1. Tokenize ANYTHING into NFT.
+2. Trade minted NFTs programmatically.
+3. Build NFT-powered applications without relying on a 3rd party (using the built-in file system and database)
+
+Here are some example applications you can build:
+
+### Build your own NFT community
+
+You no longer have to rely on some service provider to support some features, you can easily build your own NFT community. Rarepress has everything built-in that lets you manage all the tokens and trades, as well as the ability to query them to use for building NFT powered applications.
+
+- You can use `rarenet` to run the backend for your community, and use `rareterm` (in the browser) or `rareterm.node` (with node.js) to build the frontend client for your users to interact with the operating system.
+
+### Automated tokenization
+
+Write a script that automatically tokenizes things on your computer upon certain events.
+
+- You can use `rarepress` directly to build an automated tokenization engine
+- You can use `rarenet` + `rareterm.node` to build the same type of app, but with multiple thin clients
+
+### Tokenize data stream
+
+Thanks to the built-in wallet, you can automatically tokenize a stream of data in realtime.
+
+Imagine tokenizing IoT data, supply chain data, anything!
+
+- You can use `rarepress` directly to build an automated tokenization engine
+- You can use `rarenet` + `rareterm.node` to build the same type of app, but with multiple thin clients
+
+### Embedded NFT engines
+
+Embed Rarepress into existing applications. Rarepress is just node.js, so you can embed it into any JavaScript app.
+
+- You can use `rarepress` directly to build an automated tokenization engine
+- You can use `rarenet` + `rareterm.node` to build the same type of app, but with multiple thin clients
+
+### NFT plugins for existing apps
+
+There are many applications that let you build plugins. You can easily integrate Rarepress into these frameworks and build
+
+- You can use `rarepress` directly to build an automated tokenization engine
+- You can use `rarenet` + `rareterm.node` to build the same type of app, but with multiple thin clients
+
+### NFT-powered applications
+
+Thanks to the built-in database, you can easily save and query tokens WITHOUT relying on any 3rd party.
+
+This means you can build your own NFT apps powered by your own database.
+
+- You can use `rarenet` to power the token backend for your users, and `rareterm` to build the frontend.
+
+### Private NFTs
+
+Using the [file system](#file-system), you can build NFTs that can stay private, and communicate with other rarepress nodes in a peer to peer manner, or privately.
+
+- Multiple parties can use `rarenet` to power the token backends, and they can communicate peer-to-peer using `rareterm` or `rareterm.node`.
+
+
+---
 
 ## Why Rarepress?
 
@@ -51,6 +98,8 @@ It's almost like the early days of mainframe computers before personal computers
 
 Just like how the Personal Computers revolutionized our lives by making computers accessible to everyone, we believe a completely open and permissionless operating system for easily programming NFTs will result in a cambrian explosion of innovation.
 
+![introducing](introducing.png)
+
 Rarepress is **a full stack NFT operating system** which abstracts away all the complex parts, so the **creators can just focus on working with NFTs and building powerful applications with nothing but JavaScipt.**
 
 Here's an example code for minting tokens:
@@ -63,7 +112,11 @@ Also you can programmatically manage all your tokens and build applications powe
 
 You can roll your own NFT engine, exactly the way you want it.
 
+## Looking for legacy v0 Rarepress?
 
+If you're looking for the documentation for the v0 Rarepress endpoint, check here:
+
+> Legacy v0 endpoint docs: https://docs.rarepress.org
 
 
 ---
@@ -125,67 +178,76 @@ In such away, we can create a decentralized Internet of NFTs, which:
 
 ---
 
-# Use Cases
+# Quickstart
 
-With Rarepress you can:
+## Mint an NFT in 1 Minute
 
-1. Tokenize ANYTHING into NFT.
-2. Trade minted NFTs programmatically.
-3. Build NFT-powered applications without relying on a 3rd party (using the built-in file system and database)
+Just want to get started minting an NFT or NFT collection for yourself? First, watch this video:
 
-Here are some example applications you can build:
+<div class='videoWrapper'>
+<iframe width="1280" height="720" src="https://www.youtube.com/embed/F80zb9Uw-ls" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 
-## Build your own NFT community
+<br>
 
-You no longer have to rely on some service provider to support some features, you can easily build your own NFT community. Rarepress has everything built-in that lets you manage all the tokens and trades, as well as the ability to query them to use for building NFT powered applications.
+To learn more, visit the following tutorial:
 
-- You can use `rarenet` to run the backend for your community, and use `rareterm` (in the browser) or `rareterm.node` (with node.js) to build the frontend client for your users to interact with the operating system.
-
-## Automated tokenization
-
-Write a script that automatically tokenizes things on your computer upon certain events.
-
-- You can use `rarepress` directly to build an automated tokenization engine
-- You can use `rarenet` + `rareterm.node` to build the same type of app, but with multiple thin clients
-
-## Tokenize data stream
-
-Thanks to the built-in wallet, you can automatically tokenize a stream of data in realtime.
-
-Imagine tokenizing IoT data, supply chain data, anything!
-
-- You can use `rarepress` directly to build an automated tokenization engine
-- You can use `rarenet` + `rareterm.node` to build the same type of app, but with multiple thin clients
-
-## Embedded NFT engines
-
-Embed Rarepress into existing applications. Rarepress is just node.js, so you can embed it into any JavaScript app.
-
-- You can use `rarepress` directly to build an automated tokenization engine
-- You can use `rarenet` + `rareterm.node` to build the same type of app, but with multiple thin clients
-
-## NFT plugins for existing apps
-
-There are many applications that let you build plugins. You can easily integrate Rarepress into these frameworks and build
-
-- You can use `rarepress` directly to build an automated tokenization engine
-- You can use `rarenet` + `rareterm.node` to build the same type of app, but with multiple thin clients
-
-## NFT-powered applications
-
-Thanks to the built-in database, you can easily save and query tokens WITHOUT relying on any 3rd party.
-
-This means you can build your own NFT apps powered by your own database.
-
-- You can use `rarenet` to power the token backend for your users, and `rareterm` to build the frontend.
-
-## Private NFTs
-
-Using the [file system](#file-system), you can build NFTs that can stay private, and communicate with other rarepress nodes in a peer to peer manner, or privately.
-
-- Multiple parties can use `rarenet` to power the token backends, and they can communicate peer-to-peer using `rareterm` or `rareterm.node`.
+> **Rarepress OS Quickstart**
+>
+> https://os.rarepress.org/#/?id=quickstart
 
 ---
+
+## Mint an NFT in the browser
+
+Minting NFTs with Rarepress is so easy that you can even do it in a single JSFiddle. 
+
+![demo](demo.gif)
+
+Check out the demo here:
+
+> **Mint NFT Demo**
+>
+> https://rarenet.rarepress.org/#/?id=demo
+
+---
+
+## Build your own NFT platform
+
+Now you know how to mint tokens for yourself. How about building your own NFT platform, NFT marketplace, or NFT community that serves many users (instead of just for yourself)?
+
+The following tutorial explains:
+
+1. How to write the frontend code to interact with a remote Rarepress
+2. How to run your own Rarepress web server API backend
+
+> **Rarenet Quickstart**
+>
+> https://rarenet.rarepress.org/#/?id=quickstart
+
+
+---
+
+# Examples and Tutorials
+
+There are even more examples and tutorials for using Rarepress.
+
+Check them out here:
+
+> **Examples**
+>
+> https://examples.rarepress.org
+
+---
+
+# API Reference
+
+To view the entire API documentation, visit the following page:
+
+> **API**
+>
+> https://api.rarepress.org
+
 
 # Concepts
 
@@ -533,13 +595,13 @@ Unlike `rarepress.token.save()` which creates a new token or updates an existing
 
 ### 4. Send
 
-Send your signed tokens to a 3rd party endpoint. By default it is Rarible.com, but you can also specify the URL to send it to another Rarenet (A remote Rarepress endpoint) URL.
+Send your signed trade objects to a 3rd party endpoint. By default it is Rarible.com, but you can also specify the URL to send it to another Rarenet (A remote Rarepress endpoint) URL.
 
 ```javascript
-await rarepress.trade.send(signedToken)
+await rarepress.trade.send(signedTrade)
 ```
 
-Above code sends the `signedToken` to Rarible.com (default endpoint). You can also specify additional URL to send it to another endpoint.
+Above code sends the `signedTrade` to Rarible.com (default endpoint). You can also specify additional URL to send it to another endpoint.
 
 ### 5. Create
 
