@@ -248,6 +248,22 @@ To view the entire API documentation, visit the following page:
 >
 > https://api.rarepress.org
 
+---
+
+# Troubleshoot
+
+## Run on Windows
+
+To use `rarepress` and `rareterm.node` on Windows, you need to run the programs in an **admin mode**.
+
+You can do this by starting your Command Prompt by right clicking and selecting "Run as administrator" in the drop down menu. This is necessary because rarepress automatically generates all the files and folders for your NFTs while it's running, and Windows requires you to run a program in admin mode for things like this.
+
+![adming](admin.jpg)
+
+To learn more about how to run the command prompt as administrator, check this article: https://www.wikihow.com/Run-Command-Prompt-As-an-Administrator-on-Windows
+
+
+---
 
 # Concepts
 
